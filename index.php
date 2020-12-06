@@ -48,7 +48,7 @@ if ($_GET['qs_session'] == 'delete') {
       <nav>
         <div class="container navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand mr-auto" href="index.php">
-            <img src="img/SE2.png" alt="サイト名" height="70"/>
+            <img src="img/SE2.png" alt="SE2" height="70"/>
           </a>
           <!--ログイン・新規登録を一時的に保留
           <a href="register.php" class="btn btn-secondary btn-lg mr-1 text-white">新規登録</a>
@@ -56,14 +56,11 @@ if ($_GET['qs_session'] == 'delete') {
           -->
         </div>
       </nav>
-        </div>
-      </nav>
           <button class="mobile-menu__btn">
             <span></span>
             <span></span>
             <span></span>
           </button>
-        </div>
       </header>
       <!----------------------------------------------->
       <main>
