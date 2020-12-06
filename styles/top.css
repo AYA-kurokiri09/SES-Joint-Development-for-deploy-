@@ -126,7 +126,7 @@ header img{
     margin-right: 15px;
   }
 
-  @media (max-width: 393px) {
+  @media (max-width: 900px) {
     /* 幅小スマートフォン向け */
     .staff-name span::before {
       content: "あ";
