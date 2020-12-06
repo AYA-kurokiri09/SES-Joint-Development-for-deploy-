@@ -129,7 +129,7 @@ header img{
   @media (max-width: 393px) {
     /* 幅小スマートフォン向け */
     .staff-name span::before {
-      content: "";
+      content: "あ";
     }
   } 
 }
