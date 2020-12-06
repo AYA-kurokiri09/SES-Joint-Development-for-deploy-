@@ -1,28 +1,22 @@
+/* ログイン・登録画面 */
 
 body {
     background: #4696e5;
     font-size: 18px;
 }
 
-
 .head h1 {
     padding-left: 20px;
     margin: 10px;
 }
 
-.confirm-btn {
-    background: #FFCC66;
-}
-
-.return-btn {
-    background: #F06060;
-    color: white;
+.yellow-btn {
+    background: #FFFF99;
 }
 
 .wrapper {
-    width: 80%;
-    max-width: 600px;
-    margin: 60px auto;
+    width: 700px;
+    margin: 40px auto;
     border-radius: 5px;
     background: #EEEEEE;
 }
@@ -36,9 +30,4 @@ body {
 
 .form-wrapper {
     padding: 30px 46px;
-}
-
-.btn{
-    border-radius: 20px;
-    transition: .4s ease-out;
 }

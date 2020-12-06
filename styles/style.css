@@ -211,9 +211,9 @@
           transform: translateY(-11px) rotate(-135deg);
 }
 
-body {
+/* body {
   background-color: white !important;
-}
+} */
 
 .font-sm, .sub-title {
   font-size: 14px;
@@ -237,10 +237,6 @@ body {
 
 .p-sm, .questions__select, .questions__type, .questions__start {
   padding: 10px !important;
-}
-
-.main-top {
-  background-image: url(/img/SE2_Top.png);
 }
 
 .content-width, .header__inner, .questions {
@@ -329,7 +325,9 @@ body {
 }
 
 .main-top {
+  background-image: url(/img/SE2_Top.png);
   padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .border, .questions__type span {
