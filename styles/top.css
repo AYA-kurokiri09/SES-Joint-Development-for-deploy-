@@ -21,28 +21,22 @@ a:hover { color: #a9a9a9; }
 
 /* body部分 */
 
-.header__inner{
+/* header{
   background-image: url(/img/SE2_header2.png);
   height: 100px;
   padding: 2px auto;
 }
 
-.header__inner img{
+header img{
   margin: auto;
-}
+} */
 
-.main-title{
-  text-align: center;
-  padding-top: 30px;
-  font-family: 'Fredericka the Great', cursive;
-}
-
-.sub-title{
-  text-align: center;
+.main-top{
+  background-image: url(/img/SE2_Top.png);
 }
 
 /* ロード画面 */
-.start{ 
+.start{
   background-color: rgba(0, 255, 242, 0.877);
   position: fixed;
 	top: 0;

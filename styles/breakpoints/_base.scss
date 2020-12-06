@@ -1,4 +1,8 @@
 // スマホ表示時のフォントサイズ
+body {
+  background-color: $White !important;
+}
+
 .font-sm {
   font-size: 14px;
 }
@@ -19,20 +23,12 @@
   margin-bottom: 16px !important;
 }
 
-.mb-md {
-  margin-bottom: 32px !important;
-}
-
-.pb-sm {
-  padding-bottom: 16px !important;
-}
-
-.pb-md {
-  padding-bottom: 32px !important;
-}
-
 .p-sm {
   padding: 10px !important;
+}
+
+.main-top {
+  background-image: url(/img/SE2_Top.png);
 }
 
 .content-width {
@@ -41,9 +37,72 @@
   max-width: $contentMaxWidth;
 }
 
-.flex {
+#container {
+  position: relative;
+  z-index: 5;
+  transition: all 0.5s;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navHeight;
+  background-image: url(/img/SE2_header2.png);
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend .content-width;
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__li {
+    @extend .font-md;
+    font-weight: bold;
+    margin-left: 20px;
+
+    & > a {
+      color: $Black;
+      text-decoration: none !important;
+
+      &:hover {
+        color: $White;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.logo {
+  height: 70px;
+  width: 100px;
+
+  & a > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.main-top {
+  padding-top: $navHeight;
 }
 
 .border {
@@ -54,16 +113,15 @@ main {
   background-color: $BgGray;
 }
 
-.subheader {
-  @extend .mb-sm;
-  background-color: $BgGray;
-  border-bottom: 7px solid $HeaderBorderColor;
-  padding: 1.1em 0.625em 0;
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
 
-  & h2 {
-    font-size: 2em;
-    font-weight: 600;
-  }
+.sub-title {
+  @extend .font-sm;
+  color: $SubTitle;
 }
 
 .is-hidden a {
@@ -72,18 +130,6 @@ main {
 
 .questions {
   @extend .content-width;
-
-  & .main-title {
-    @extend .font-lg;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-
-  & .sub-title {
-    @extend .font-sm;
-    @extend .mb-sm;
-    color: $SubTitle;
-  }
 
   &__title {
     @extend .font-lr;
@@ -129,83 +175,4 @@ main {
       }
     }
   }
-
-  &__item {
-    @extend .pb-md;
-    @extend .mb-md;
-    border-bottom: 1px dashed $BorderBottomColor;
-    box-sizing: border-box;
-
-    span {
-      @extend .font-md;
-    }
-  }
-
-  // 問題文ここから
-  &__sentence {
-    @extend .font-md;
-    @extend .mb-sm;
-  }
-
-  &__number {
-    display: block;
-    float: left;
-    color: $White;
-    text-align: center;
-    background: $QuestionNumberColor;
-    border-radius: 50%;
-    height: 2em;
-    width: 2em;
-    padding: 0;
-    margin: -0.25em 0.5em 0 0;
-    line-height: 2em;
-  }
-  // 問題文ここまで
-
-  // 選択式 ここから
-  &__choice {
-    @extend .mb-sm;
-    display: block;
-    list-style: none;
-    padding: 16px;
-    border: 1px solid $SelectBorderColor;
-    background-color: $SelectBgColor;
-    border-radius: 8px;
-    box-sizing: border-box;
-    max-width: 436px;
-    width: auto;
-
-    &:hover {
-      border: 1px solid $RadioButtonCheckedColor;
-    }
-
-    label {
-      margin: 0 auto;
-    }
-  }
-  // 選択式 ここまで
-
-  // 記述式 ここから
-  &__description {
-    @extend .content-width;
-    @extend .font-md;
-    @extend .mb-sm;
-
-    input[type="text"] {
-      @extend .content-width;
-      display: inline-block;
-      width: 100%;
-      height: 50px;
-      box-sizing: border-box;
-      outline: none;
-      border: 1px solid $SelectBorderColor;
-      border-radius: 8px;
-      padding: 10px;
-
-      &:focus {
-        border: 1px solid $RadioButtonCheckedColor;
-      }
-    }
-  }
-  // 記述式 ここまで
 }
