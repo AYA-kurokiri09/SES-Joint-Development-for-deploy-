@@ -56,11 +56,13 @@ if ($_GET['qs_session'] == 'delete') {
           -->
         </div>
       </nav>
+          <!--新規登録・ログイン用のスマホ用メニュー。一時保留
           <button class="mobile-menu__btn">
             <span></span>
             <span></span>
             <span></span>
           </button>
+          -->
       </header>
       <!----------------------------------------------->
       <main>
