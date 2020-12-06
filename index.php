@@ -149,7 +149,7 @@ if ($_GET['qs_session'] == 'delete') {
               </li>
             </ul>
             <ul class="col list-unstyled">
-            <li class="staff-name"><span></span></li>Yuki.Ishizaki</li>
+            <li class="staff-name"><span></span>Yuki.Ishizaki</li>
               <li>
                 <ul class="list-unstyled">
                   <li>
