@@ -14,7 +14,6 @@ if ($_GET['qs_session'] == 'delete') {
 
 <!DOCTYPE html>
 <html>
-
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <meta charset="UTF-8" />
   <title>SE2 -Study English Site for Engineers-</title>

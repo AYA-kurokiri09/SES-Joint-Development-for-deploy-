@@ -23,5 +23,4 @@ $db_name = substr($url["path"], 1);
 
 $dsn = 'mysql:host='.$db_host.';dbname='.$db_name.';charset=utf8mb4;';
 $pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
-
 ?>
