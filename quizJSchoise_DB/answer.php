@@ -109,25 +109,25 @@ $_SESSION['rireki']['kekka'][$monme]=$hantei;
       <h2 class="main-title">Test your English</h2>
       <br>
       <div class="questions__sentence">
-        <strong class="questions__number"><?php print$monme;?></strong>
-        <span><?php print$question;?></span>
+        <strong class="questions__number"><?=$monme;?></strong>
+        <span><?=$question;?></span>
       </div>
       <div class="questions__item">
         <p><span class="labeling">判定</span><br>
         <div class="sentence answers__item">
-          <?php echo"<div class='hantei'>$hantei</div>";?></p>
+          <?="<div class='hantei'>$hantei</div>";?></p>
         </div>
         <br>
-        <!--<dd>問題No.<?php print$id;?></dd>-->
+        <!--<dd>問題No.<?=$id;?></dd>-->
         <p><span class="labeling">正解</span><br>
         <div class="sentence answers__item">
-          <?php echo"<div class='answer'>$answer</div>";?></p>
-          <?php echo"<div class='explanation'>$explanation</div>";?>
+          <?="<div class='answer'>$answer</div>";?></p>
+          <?="<div class='explanation'>$explanation</div>";?>
         </div>
         <br>
         <p><span class="labeling">詳細</span>
         <div class="sentence answers__item">
-          <?php echo"<div class='explanation'><a href='$url' target='_blank' rel='noopener noreferrer'>$url</a></div>";?>
+          <?="<div class='explanation'><a href='$url' target='_blank' rel='noopener noreferrer'>$url</a></div>";?>
           </p>
         </div>
       </div>
@@ -139,7 +139,7 @@ $_SESSION['rireki']['kekka'][$monme]=$hantei;
         echo"<button class='questions__btn slide-bg'><a href='index.php'>次の問題へ</a></button>";
       }
       ?>
-      <!--<p>現在、<?php echo $monme;?>問中<?php echo $ok_count;?>問正解しています</p>-->
+      <!--<p>現在、<?=$monme;?>問中<?=$ok_count;?>問正解しています</p>-->
     </section> 
   
   <!-- javascript はここから -->  

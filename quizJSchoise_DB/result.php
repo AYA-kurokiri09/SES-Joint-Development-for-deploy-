@@ -87,7 +87,7 @@ $ok_count=$_SESSION['seikai']['ok_count'];
     <section class="questions">
         <div id="container">
         <h1>Results</h1>
-        <p>10問中<?php echo$ok_count;?>問正解です。</p>
+        <p>10問中<?=$ok_count;?>問正解です。</p>
         <table class="grayback">
         <tr><th>No.</th><th class="figure_qes_th">設問</th><th>判定</th><th class="figure_qes_th">正解</th></tr>
         <?php

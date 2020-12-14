@@ -1,6 +1,5 @@
 <?php
 session_start();
-//<!------------------------------ 変更 ----------------------------------->
 // 結果発表ページからのurlパラメータ or クイズ途中の場合 = クイズの履歴を全て削除
 if ($_GET['qs_session'] == 'delete') {
   $_SESSION['type'] = NULL;
@@ -9,7 +8,6 @@ if ($_GET['qs_session'] == 'delete') {
   $_SESSION['rand'] = NULL;
   $_SESSION['rireki'] = NULL;
 }
-// <!----------------------------- ここまで ---------------------------------->
 ?>
 
 <!DOCTYPE html>
@@ -81,9 +79,7 @@ if ($_GET['qs_session'] == 'delete') {
               <div class="questions__type">
                 <span>選択式</span>
                 <div class="questions__start">
-                  <!------------------------------ 変更 ----------------------------------->
                   <a href="quizJSchoise_DB/index.php?type=css" class="btn btn-default btn-lg">学習する</a>
-                  <!----------------------------- ここまで --------------------------------->
                 </div>
               </div>
               <br />
@@ -103,9 +99,7 @@ if ($_GET['qs_session'] == 'delete') {
               <div class="questions__type">
                 <span>選択式</span>
                 <div class="questions__start">
-                  <!----------------------------- 変更 --------------------------------->
                   <a href="quizJSchoise_DB/index.php?type=js" class="btn btn-default btn-lg">学習する</a>
-                  <!----------------------------- ここまで --------------------------------->
                 </div>
               </div>
               <br />
@@ -122,15 +116,12 @@ if ($_GET['qs_session'] == 'delete') {
 
       <!----------------------------------------------->
       <footer id="footer" class="bg-light py-5">
-        <!--display-4→display-5、py-5→py-1に変更-->
         <h2 class="display-5 text-center font-patrick py-1">
           Production Staff's SNS
         </h2>
         <div class="container py-4 py-md-5">
 
-
           <div id="footer-index" class="row pt-1">
-            <!--pt-4→pt-1に変更-->
             <ul class="col list-unstyled">
             <li class="staff-name"><span></span>JUN</li>
                 <ul class="list-unstyled">

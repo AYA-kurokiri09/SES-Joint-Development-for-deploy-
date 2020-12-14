@@ -190,34 +190,34 @@ $_SESSION['kotae']=$kotae
       問題と意味が一致するものを1つ選んで「回答する」を押してください。
       </p>
       <div class="questions__sentence">
-        <strong class="questions__number"><?php print$monme;?></strong>
-        <span><?php print htmlspecialchars($question,ENT_QUOTES, 'UTF-8');?></span>
+        <strong class="questions__number"><?=$monme;?></strong>
+        <span><?= htmlspecialchars($question,ENT_QUOTES, 'UTF-8');?></span>
       </div>
       <div class="questions__item">
       <form action="answer.php" method="POST" class="">
         <ul>
           <li class="questions__choice">
             <div class="radio">
-              <input id="radio1a" name="kotae" type="radio" value="<?php echo$kotae['0'];?>" checked>
-              <label for="radio1a" class="radio-label"><?php print$choices['0'];?></label>
+              <input id="radio1a" name="kotae" type="radio" value="<?=$kotae['0'];?>" checked>
+              <label for="radio1a" class="radio-label"><?=$choices['0'];?></label>
             </div>
           </li>
           <li class="questions__choice">
             <div class="radio">
-              <input id="radio1b" name="kotae" type="radio" value="<?php echo$kotae['1'];?>">
-              <label for="radio1b" class="radio-label"><?php print$choices['1'];?></label>
+              <input id="radio1b" name="kotae" type="radio" value="<?=$kotae['1'];?>">
+              <label for="radio1b" class="radio-label"><?=$choices['1'];?></label>
             </div>
           </li>
           <li class="questions__choice">
             <div class="radio">
-              <input id="radio1c" name="kotae" type="radio" value="<?php echo$kotae['2'];?>">
-              <label for="radio1c" class="radio-label"><?php print$choices['2'];?></label>
+              <input id="radio1c" name="kotae" type="radio" value="<?=$kotae['2'];?>">
+              <label for="radio1c" class="radio-label"><?=$choices['2'];?></label>
             </div>
           </li>
           <li class="questions__choice">
             <div class="radio">
-              <input id="radio1d" name="kotae" type="radio" value="<?php echo$kotae['3'];?>">
-              <label for="radio1d" class="radio-label"><?php print$choices['3'];?></label>
+              <input id="radio1d" name="kotae" type="radio" value="<?=$kotae['3'];?>">
+              <label for="radio1d" class="radio-label"><?=$choices['3'];?></label>
             </div>
           </li>
         <ul>
